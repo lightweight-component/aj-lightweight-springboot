@@ -1,4 +1,4 @@
-package com.ajaxjs.framework.spring.filter;
+package com.ajaxjs.framework.embeded_tomcat.filter;
 
 import com.ajaxjs.util.StrUtil;
 
@@ -7,14 +7,13 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
 /**
- * 避免乱码
+ * 避免乱码并加入 PUT 获取表单数据
  */
 public class UTF8CharsetFilter implements Filter {
     @Override
     public void init(FilterConfig filterConfig) {
-    }
 
-    static String PUT = "PUT";
+    }
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {

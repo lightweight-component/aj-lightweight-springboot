@@ -1,4 +1,4 @@
-package com.ajaxjs.framework.spring.filter;
+package com.ajaxjs.framework.embeded_tomcat.filter;
 
 import com.ajaxjs.util.convert.ConvertBasicValue;
 import com.ajaxjs.util.convert.MapTool;
@@ -27,7 +27,7 @@ public class GetPutData extends HttpServletRequestWrapper {
 
     private Map<String, String[]> putRequestData;
 
-    private final static String PUT = "PUT";
+    public final static String PUT = "PUT";
 
     @Override
     public Map<String, String[]> getParameterMap() {

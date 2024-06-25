@@ -111,7 +111,9 @@ public class TomcatConfig {
      * (/tmp doesn't seem a good choice for security).
      *
      * <p>
-     * TODO: disable work dir if not needed ( no jsp, etc ).
+     * TODO: disable work dir if not needed (no jsp, etc).
+     *
+     * @param baseDir 目录
      */
     public void setBaseDir(String baseDir) {
         this.baseDir = baseDir;

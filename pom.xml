@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <artifactId>aj-lightweight-springboot</artifactId>
-    <description>Small Java Utils Library with many powerful components</description>
+    <description>Based on SpringMVC, SpringBoot alike</description>
     <version>1.0</version>
     <packaging>jar</packaging>
 
@@ -13,6 +13,16 @@
         <version>1.17</version>
         <relativePath/>
     </parent>
+
+    <scm>
+        <url>https://github.com/lightweight-component/aj-lightweight-springboot</url>
+        <connection>scm:git:https://github.com/lightweight-component/aj-lightweight-springboot.git</connection>
+    </scm>
+
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>https://github.com/lightweight-component/aj-lightweight-springboot/issues</url>
+    </issueManagement>
 
     <dependencies>
         <dependency>

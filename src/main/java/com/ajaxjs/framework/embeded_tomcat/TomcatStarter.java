@@ -125,10 +125,6 @@ public class TomcatStarter {
             }
         }));
 
-//        ac.register(clz);
-//        ac.refresh();
-//        ac.registerShutdownHook();
-
         String tpl = "Web 服务启动完毕。Spring 耗时：%sms，总耗时：%sms 127.0.0.1:" + cfg.getPort() + cfg.getContextPath();
         tpl = String.format(tpl, springTime, System.currentTimeMillis() - startedTime);
         log.info(tpl);
@@ -214,7 +210,12 @@ public class TomcatStarter {
     }
 
     /**
-     * You can override it
+     * 当上下文准备就绪时调用此方法。
+     * <p>
+     * 您可以通过覆盖此方法来在此处执行初始化操作或访问上下文。
+     * 建议避免进行重型操作以确保应用的响应性。
+     *
+     * @param context 应用上下文，可用于访问全局应用信息
      */
     public void onContextReady(Context context) {
     }
