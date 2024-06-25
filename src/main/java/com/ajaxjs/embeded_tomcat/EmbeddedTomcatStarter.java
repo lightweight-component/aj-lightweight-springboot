@@ -1,7 +1,7 @@
-package com.ajaxjs.framework.embeded_tomcat;
+package com.ajaxjs.embeded_tomcat;
 
-import com.ajaxjs.framework.embeded_tomcat.filter.FileUploadHelper;
-import com.ajaxjs.framework.embeded_tomcat.filter.UTF8CharsetFilter;
+import com.ajaxjs.embeded_tomcat.filter.FileUploadHelper;
+import com.ajaxjs.embeded_tomcat.filter.UTF8CharsetFilter;
 import org.apache.catalina.Context;
 import org.apache.catalina.LifecycleEvent;
 import org.apache.catalina.LifecycleState;

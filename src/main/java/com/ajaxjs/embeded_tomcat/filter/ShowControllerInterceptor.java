@@ -1,4 +1,4 @@
-package com.ajaxjs.framework.embeded_tomcat.filter;
+package com.ajaxjs.embeded_tomcat.filter;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.method.HandlerMethod;

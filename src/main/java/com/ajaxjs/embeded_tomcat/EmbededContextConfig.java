@@ -1,4 +1,4 @@
-package com.ajaxjs.framework.embeded_tomcat;
+package com.ajaxjs.embeded_tomcat;
 
 import org.apache.catalina.WebResourceRoot;
 import org.apache.catalina.startup.ContextConfig;

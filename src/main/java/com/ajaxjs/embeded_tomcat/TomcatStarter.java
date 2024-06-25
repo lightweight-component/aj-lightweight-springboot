@@ -1,4 +1,4 @@
-package com.ajaxjs.framework.embeded_tomcat;
+package com.ajaxjs.embeded_tomcat;
 
 import com.ajaxjs.util.StrUtil;
 import com.ajaxjs.util.io.FileHelper;

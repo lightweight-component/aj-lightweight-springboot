@@ -1,7 +1,7 @@
-package com.ajaxjs.framework.embeded_tomcat;
+package com.ajaxjs.embeded_tomcat;
 
-import com.ajaxjs.framework.embeded_tomcat.TomcatConfig;
-import com.ajaxjs.framework.embeded_tomcat.TomcatStarter;
+import com.ajaxjs.embeded_tomcat.TomcatConfig;
+import com.ajaxjs.embeded_tomcat.TomcatStarter;
 import org.junit.Test;
 
 public class TestEmbeddedTomcat {

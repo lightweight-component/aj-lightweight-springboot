@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>aj-lightweight-springboot</artifactId>
     <description>Based on SpringMVC, SpringBoot alike</description>
-    <version>1.0</version>
+    <version>1.1</version>
     <packaging>jar</packaging>
 
     <parent>
@@ -14,6 +14,7 @@
         <relativePath/>
     </parent>
 
+    <url>https://github.com/lightweight-component/aj-lightweight-springboot</url>
     <scm>
         <url>https://github.com/lightweight-component/aj-lightweight-springboot</url>
         <connection>scm:git:https://github.com/lightweight-component/aj-lightweight-springboot.git</connection>

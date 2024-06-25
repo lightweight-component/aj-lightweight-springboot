@@ -1,4 +1,4 @@
-package com.ajaxjs.framework.embeded_tomcat.filter;
+package com.ajaxjs.embeded_tomcat.filter;
 
 import com.ajaxjs.util.convert.ConvertBasicValue;
 import com.ajaxjs.util.convert.MapTool;
