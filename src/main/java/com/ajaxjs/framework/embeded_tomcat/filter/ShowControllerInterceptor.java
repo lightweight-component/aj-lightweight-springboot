@@ -16,7 +16,6 @@ import java.util.Map;
 public class ShowControllerInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
-        System.out.println("-------------------ShowControllerInterceptor");
         if (handler instanceof HandlerMethod) {
             HandlerMethod h = (HandlerMethod) handler;
             log.info("控制器方法：" + h);

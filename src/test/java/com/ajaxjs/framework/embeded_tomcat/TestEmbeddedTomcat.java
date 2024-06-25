@@ -1,4 +1,4 @@
-package com.ajaxjs.embeded_tomcat;
+package com.ajaxjs.framework.embeded_tomcat;
 
 import com.ajaxjs.framework.embeded_tomcat.TomcatConfig;
 import com.ajaxjs.framework.embeded_tomcat.TomcatStarter;
