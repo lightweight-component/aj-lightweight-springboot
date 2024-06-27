@@ -7,7 +7,7 @@
 # Lightweight SpringBoot
 Based on SpringMVC, SpringBoot alike. Enhance Spring MVC configuration with simplicity, enabling it to match Spring Boot's configuration capabilities.
 
-Tutorial: https://framework.ajaxjs.com/docs/aj/.
+Tutorial: https://blog.csdn.net/zhangxin09/article/details/139968363.
 
 Java Documents: https://dev.ajaxjs.com/docs/javadoc/aj-lightweight-springboot/.
 

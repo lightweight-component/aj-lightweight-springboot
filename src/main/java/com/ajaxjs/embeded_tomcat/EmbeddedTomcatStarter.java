@@ -137,6 +137,11 @@ public class EmbeddedTomcatStarter extends TomcatStarter {
         new EmbeddedTomcatStarter(cfg, clz).start();  // 使用配置好的 Tomcat 配置和类启动嵌入式 Tomcat 服务器
     }
 
+    /**
+     * 从类路径下的 application.yml 文件中获取服务器配置。
+     *
+     * @return 服务器配置的 Map 对象，如果文件不存在或读取失败，则返回null
+     */
     @SuppressWarnings("unchecked")
     static Map<String, Object> getServerConfig() {
         ClassPathResource resource = new ClassPathResource("application.yml");
