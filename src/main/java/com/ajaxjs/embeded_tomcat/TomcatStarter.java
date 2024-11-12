@@ -26,6 +26,7 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.management.ManagementFactory;
 import java.net.MalformedURLException;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.rmi.registry.LocateRegistry;
 import java.util.concurrent.Executor;
@@ -146,6 +147,24 @@ public class TomcatStarter {
     }
 
     /**
+     * 获取正在运行的 JAR 文件的目录
+     * 如果您在 IDE 中运行代码，则该代码可能会返回项目的根目录
+     *
+     * @return JAR 文件的目录
+     */
+    public static String getJarDir() {
+        String jarDir = null;
+
+        try {
+            jarDir = new File(TomcatStarter.class.getProtectionDomain().getCodeSource().getLocation().toURI().getPath()).getParent();
+        } catch (URISyntaxException e) {
+            log.warn("ERROR>>", e);
+        }
+
+        return jarDir;
+    }
+
+    /**
      * 读取项目路径
      */
     private void initContext() {
@@ -155,7 +174,7 @@ public class TomcatStarter {
 //            jspFolder = Resources.getResourcesFromClasspath("META-INF\\resources");// 开放调试阶段，直接读取源码的
 
         if (jspFolder == null) {
-            jspFolder = Resources.getJarDir() + "/../webapp"; // 部署阶段。这个并不会实际保存 jsp。因为 jsp 都在 META-INF/resources 里面。但因为下面的 addWebapp() 又需要
+            jspFolder = getJarDir() + "/../webapp"; // 部署阶段。这个并不会实际保存 jsp。因为 jsp 都在 META-INF/resources 里面。但因为下面的 addWebapp() 又需要
             FileHelper.mkDir(jspFolder);
         }
 

@@ -10,7 +10,7 @@
     <parent>
         <groupId>com.ajaxjs</groupId>
         <artifactId>ajaxjs-parent</artifactId>
-        <version>1.18</version>
+        <version>1.21</version>
         <relativePath/>
     </parent>
 
@@ -29,7 +29,7 @@
         <dependency>
             <groupId>com.ajaxjs</groupId>
             <artifactId>ajaxjs-util</artifactId>
-            <version>1.1.6</version>
+            <version>1.1.7</version>
         </dependency>
 
         <!-- YAML 配置文件。更新不了 -->
